@@ -1,16 +1,89 @@
-<form id="signupForm">
-  <label for="name">Name:</label>
-  <input type="text" id="name" required><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page Assignment 🚀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" required><br>
+    <!-- ==============================
+         Header + Dark Mode Toggle
+    =============================== -->
+    <header>
+      <h1>✨ Interactive Web Page with JavaScript ✨</h1>
+      <button id="toggleMode">🌙 Dark Mode</button>
+    </header>
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" required><br>
+    <!-- ==============================
+         Counter Section
+    =============================== -->
+    <section class="counter-section">
+      <h2>🔢 Counter Feature</h2>
+      <p class="counter-display" id="counter">0</p>
+      <div class="counter-buttons">
+        <button id="increment">➕ Increment</button>
+        <button id="decrement">➖ Decrement</button>
+        <button id="reset">🔄 Reset</button>
+      </div>
+    </section>
 
-  <label for="confirm">Confirm Password:</label>
-  <input type="password" id="confirm" required><br>
+    <!-- ==============================
+         FAQ Section
+    =============================== -->
+    <section class="faq">
+      <h2>❓ FAQ Section</h2>
+      
+      <div>
+        <div class="faq-question">👉 What is this project about?</div>
+        <div class="faq-answer hidden">
+          This project demonstrates JavaScript interactivity like counters, FAQ toggles, dark mode, and form validation.
+        </div>
+      </div>
 
-  <button type="submit">Submit</button>
-  <p id="formMessage"></p>
-</form>
+      <div>
+        <div class="faq-question">👉 How does dark mode work?</div>
+        <div class="faq-answer hidden">
+          A button toggles a class on the <code>body</code> element, switching between light and dark themes using CSS.
+        </div>
+      </div>
+
+      <div>
+        <div class="faq-question">👉 What skills am I learning here?</div>
+        <div class="faq-answer hidden">
+          You’re learning event handling, DOM manipulation, form validation, and responsive UI design.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         Form Section
+    =============================== -->
+    <section>
+      <h2>📝 Sign Up Form</h2>
+      <form id="signupForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter a password" required minlength="6">
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Confirm your password" required>
+
+        <button type="submit">🚀 Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
