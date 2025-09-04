@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+#toggleMode {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0077ff;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+#toggleMode:hover {
+  background: #005fcc;
+}
+
+/* ==============================
+   Counter Section
+============================== */
+.counter-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.counter-display {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.counter-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.counter-buttons button:hover {
+  background: #218838;
+}
+
+.counter-buttons #reset {
+  background: #dc3545;
+}
+
+.counter-buttons #reset:hover {
+  background: #b52a36;
+}
+
+/* ==============================
+   FAQ Section
+============================== */
+.faq {
+  margin: 2rem 0;
+}
+
+.faq-question {
+  background: #0077ff;
+  color: white;
+  padding: 12px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  background: #e9ecef;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==============================
+   Form Section
+============================== */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #0077ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #005fcc;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .counter-display {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #toggleMode {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  form input, form button {
+    font-size: 0.9rem;
+  }
+}
